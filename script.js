@@ -40,9 +40,7 @@ buttonEl.addEventListener("click", function(){
 onValue(webInDB, function(snapshot) {
     if (snapshot.exists()) {
         let itemsArray = Object.values(snapshot.val())
-        
-        webListEl.innerHTML = "Projelerim"
-        
+
         for (let i = 0; i < itemsArray.length; i++) {
             let currentItem = itemsArray[i]
             let myObject = currentItem.split(",")
