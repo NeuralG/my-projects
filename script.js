@@ -46,7 +46,7 @@ onValue(webInDB, function(snapshot) {
             let myObject = currentItem.split(",")
             let currentName = myObject[0]
             let currentLink = myObject[1]
-            webListEl.innerHTML += `<li><a href="https://${currentLink}">${currentName}</a></li>`
+            webListEl.innerHTML += `<li><a href="https://${currentLink}" target="_blank">${currentName}</a></li>`
             
         }    
     } else {
