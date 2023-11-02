@@ -27,7 +27,7 @@ buttonEl.addEventListener("click", function(){
     let webName = webNameEl.value
     let webLink = webLinkEl.value
 
-    if (name == myName && pass == myPass){
+    if (name == myName && pass == myPass && webName && webLink){
         let webData = [webName,webLink]
         let webDataStringed = webData.toString()
         push(webInDB,webDataStringed)
@@ -40,7 +40,7 @@ buttonEl.addEventListener("click", function(){
 onValue(webInDB, function(snapshot) {
     if (snapshot.exists()) {
         let itemsArray = Object.values(snapshot.val())
-
+        webListEl.innerHTML = ""
         for (let i = 0; i < itemsArray.length; i++) {
             let currentItem = itemsArray[i]
             let myObject = currentItem.split(",")
