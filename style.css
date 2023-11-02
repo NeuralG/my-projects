@@ -1,22 +1,40 @@
+#admin, #web-sites{
+    overflow-y: auto;
+}
+
+body{
+    background-color: #6228ce;
+    overflow: auto;
+}
+
 #admin {
     display: flex;
-    height: 20vh;
     width: 40vw;
     border: 0;
     margin: 0 auto;
     flex-wrap: wrap;
-    column-gap:50px
+    column-gap:50px;
+    row-gap: 10px;
 }
 
 #admin input{
+    background-color: wheat;
+    border: 0;
+    border-radius: 10px;
     height: 50px;
     flex-grow: 2;
+    text-align: center;
 }
 
 #admin button{
     height: 50px;
     flex-grow: 1;
     margin-right: 2vw;
+    margin: 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: wheat;
+    font-weight: 600;
 }
 
 #web-sites{
@@ -24,7 +42,6 @@
     height: 65vh;
     width: 40vw;
     margin: 0 auto;
-    margin-top: 10px;
     text-align: center;
     padding: 0;
     overflow-y: auto;
@@ -36,6 +53,7 @@ a{
 }
 
 ul{
+    font-family: Georgia, serif;
     display: flex;
     list-style-type: none;
     font-size: 20px;
@@ -46,13 +64,13 @@ ul{
 
 li{
     padding: 5px 10px;
-    background-color: wheat;
+    background-color: #f5deb3;
     flex-grow: 1;
 }
 
-#title{
+p{
+    color: whitesmoke;
     display: block;
-    margin-top: 10px;
     font-size: 40px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
