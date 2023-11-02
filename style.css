@@ -24,6 +24,7 @@ body{
     height: 50px;
     flex-grow: 2;
     text-align: center;
+    overflow: hidden;
 }
 
 #admin button{
